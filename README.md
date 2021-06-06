@@ -1,10 +1,14 @@
 # Git
 
-Git é um sistema de controle de versão distribuído.
+Esse repositório possui anotações sobre o sistema de versionamento Git.
 
-O Git trabalha com repositórios, uma pasta oculta chamada _.git_ responsável por armazenar informações sobre mudanças no diretório.
+Todos os arquivos estão no formato _markdown_.
 
-A palavra repositório também é utilizada para designar o próprio diretório.
+## Sobre Git
+
+Git é um sistema de controle de versão distribuído. Com essa ferramenta, é possível rastrear mudanças em arquivos e recuperar versões anteriores.
+
+O Git trabalha com repositórios - diretórios com arquivos e uma pasta oculta chamada _.git_. Essa é responsável por armazenar todas as informações necessárias para o controle de versão.
 
 Os arquivos de um repositório podem estar em três áreas:
 
@@ -27,6 +31,5 @@ A manipulação de repositórios é feita através de uma interface de linha de 
 
 ## Referências
 
-- [Site do Git](https://git-scm.com)
-- [Curso por Bósson Treinamento](https://www.youtube.com/playlist?list=PLucm8g_ezqNq0dOgug6paAkH0AQSJPlIe)
-- [Curso por The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
+- [Git](https://git-scm.com)
+- [GitHub Guides](https://guides.github.com)
