@@ -1,6 +1,6 @@
 # Git
 
-Esse repositório possui anotações sobre o sistema de versionamento Git.
+Esse repositório possui anotações sobre pontos do sistema de versionamento Git.
 
 Todos os arquivos estão no formato _markdown_.
 
@@ -30,6 +30,8 @@ A manipulação de repositórios é feita através de uma interface de linha de 
 - [Arquivo _.gitignore_](arquivo-gitignore.md)
 
 ## Referências
+
+Para criação desse repositório, foram utilizados as fontes de informação listadas a seguir.
 
 - [Git](https://git-scm.com)
 - [GitHub Guides](https://guides.github.com)
