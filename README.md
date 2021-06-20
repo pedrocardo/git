@@ -1,6 +1,6 @@
 # Git
 
-Esse repositório possui anotações sobre pontos do sistema de versionamento Git.
+Esse repositório possui anotações sobre o sistema de versionamento Git.
 
 Todos os arquivos estão no formato _markdown_.
 
@@ -18,7 +18,7 @@ Todos os arquivos estão no formato _markdown_.
 
 ## Referências
 
-Para criação desse repositório, foram utilizados as fontes de informação listadas a seguir.
+Para criação desse repositório, foram utilizados as fontes de informações listadas a seguir.
 
 - [Git](https://git-scm.com)
 - [GitHub Guides](https://guides.github.com)
