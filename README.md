@@ -18,7 +18,7 @@ Todos os arquivos estão no formato _markdown_.
 
 ## Referências
 
-Para criação desse repositório, foram utilizados as fontes de informações listadas a seguir.
+As principais fontes de informações para elaboração desse repositório estão listadas a seguir.
 
 - [Git](https://git-scm.com)
 - [GitHub Guides](https://guides.github.com)
