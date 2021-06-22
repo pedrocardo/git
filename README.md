@@ -1,8 +1,8 @@
-# Git
+# Estudos sobre Git
 
-Esse repositório possui anotações sobre o sistema de versionamento Git.
+Esse repositório é elaborado a partir de estudos sobre o sistema de versionamento Git.
 
-Todos os arquivos estão no formato _markdown_.
+Os conteúdos estão organizados em arquivos no formato _markdown_.
 
 ## Conteúdos
 
@@ -20,5 +20,6 @@ Todos os arquivos estão no formato _markdown_.
 
 As principais fontes de informações para elaboração desse repositório estão listadas a seguir.
 
-- [Git](https://git-scm.com)
+- [Git Cheat Sheets](https://training.github.com)
+- [Git Reference](https://git-scm.com/docs)
 - [GitHub Guides](https://guides.github.com)
