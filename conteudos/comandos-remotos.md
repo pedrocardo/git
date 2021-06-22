@@ -1,4 +1,4 @@
-# Comandos para manipulação de repositórios remotos
+# Comandos para manipular de repositórios remotos
 
 Comando _clone_ baixa um clone de um repositório remoto.
 
