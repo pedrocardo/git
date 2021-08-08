@@ -6,12 +6,6 @@ Comando _checkout_ com _commit_ retorna a área _working_ para a versão do _com
 git checkout [commit]
 ```
 
-O comando _checkout_ com arquivo remove o arquivo da área _staging_, mas não deleta suas modificações.
-
-```
-git checkout [arquivo]
-```
-
 O comando _checkout_ com _branch_ muda para a _branch_ especificada.
 
 ```
