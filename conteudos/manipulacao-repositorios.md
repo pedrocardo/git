@@ -45,13 +45,13 @@ git add *.txt
 
 ### Comando _branch_
 
-Comando _branch_ exibe uma lista de _branches_ do repositório. Nessa lista, a _branch_ com asterisco será a atual.
+Comando _branch_ exibe a lista de _branches_ do repositório. Nessa lista, a _branch_ com asterisco será a atual.
 
 ```
 git branch
 ```
 
-O comando _branch_ com nome cria uma nova _branch_ com o nome especificado.
+O comando _branch_ pode criar uma nova _branch_ com o nome especificado.
 
 ```
 git branch [nome]
@@ -83,13 +83,13 @@ git branch --no-merged
 
 ### Comando _checkout_
 
-Comando _checkout_ com _commit_ retorna a área _working_ para a versão do _commit_ determinado, criando uma nova _branch_.
+Comando _checkout_ retorna a área _working_ para a versão do _commit_ especificado, criando uma nova _branch_.
 
 ```
 git checkout [commit]
 ```
 
-O comando _checkout_ com _branch_ muda para a _branch_ especificada.
+O comando _checkout_ muda para a _branch_ especificada.
 
 ```
 git checkout [branch]
