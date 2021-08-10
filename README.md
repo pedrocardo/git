@@ -8,4 +8,4 @@ Os conteúdos estudados estão organizados em arquivos no formato _markdown_.
 
 - [Sobre Git](conteudos/sobre-git.md)
 - [Manipulação de repositórios](conteudos/manipulacao-repositorios.md)
-- [Arquivo _.gitignore_](conteudos/arquivo-gitignore.md)
+- [Ignorar arquivos](conteudos/ignorar-arquivos.md)
