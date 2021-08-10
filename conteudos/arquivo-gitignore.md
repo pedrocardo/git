@@ -1,19 +1,27 @@
 # Arquivo _.gitignore_
 
-O arquivo _gitignore_ pode ser criado para evitar que itens sejam rastreados pelo repositório.
+O arquivo _.gitignore_ serve para indicar itens que não serão rastreados pelo repositório.
 
-Os itens a serem ignorados devem ter seu nome escrito no arquivo _.gitignore_ separados por parágrafo.
+Esse arquivo deve ser criado dentro do diretório com a pasta _.git_.
+
+## Itens não rastreados
+
+Para que um item não seja rastreado pelo repositório, seu nome deve ser escrito no arquivo _.gitignore_.
+
+Itens escritos no arquivo _.gitignore_ devem ser separados por parágrafo.
 
 ```
 texto.txt
 
 *.js
 
-src/
+diretório/
 ```
 
-No arquivo _gitignore_, podem ser escritos comentários utilizando _#_.
+## Comentários
+
+No arquivo _.gitignore_, podem ser escritos comentários utilizando _#_.
 
 ```
-# comentário
+# comentário no arquivo .gitignore
 ```
