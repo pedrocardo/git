@@ -1,8 +1,8 @@
 # Sobre Git
 
-Git é um sistema de controle de versão distribuído. Com o Git, é possível rastrear mudanças em arquivos e recuperar versões anteriores.
+Git é um sistema de controle de versão distribuído. Com esse sistema, é possível rastrear mudanças em arquivos e recuperar versões anteriores.
 
-O Git trabalha com repositórios - diretórios com arquivos e uma pasta oculta chamada _.git_. Essa pasta é responsável por armazenar todas as informações necessárias para o controle de versão.
+O Git trabalha com repositórios - diretórios com uma pasta oculta chamada _.git_. Essa pasta é responsável por armazenar todas as informações necessárias para o controle de versão.
 
 Os arquivos de um repositório podem estar em três áreas:
 

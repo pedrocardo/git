@@ -35,35 +35,36 @@ Os comandos descritos nesse arquivo estão listados a seguir.
 
 ### Comando _add_
 
-Comando _add_ adiciona um ou mais arquivos a área _staging_.
+Comando _add_ adiciona um ou mais itens a área _staging_.
 
 ```
 git add [arquivo]
+git add [diretório]
 git add *
 git add *.txt
 ```
 
 ### Comando _branch_
 
-Comando _branch_ exibe a lista de _branches_ do repositório. Nessa lista, a _branch_ com asterisco será a atual.
+Comando _branch_ exibe a lista de _branches_ do repositório.
 
 ```
 git branch
 ```
 
-O comando _branch_ pode criar uma nova _branch_ com o nome especificado.
+O comando _branch_ cria uma _branch_ com o nome especificado.
 
 ```
-git branch [nome]
+git branch [branch]
 ```
 
-O comando _branch_ com _-d_ remove a _branch_ especificada se ela não tiver mudanças em relação a _branch_ _master_ ou tiver sido mesclada.
+O comando _branch_ com _-d_ remove a _branch_ especificada se ela não tiver diferenças com a _branch_ _master_.
 
 ```
 git branch -d [branch]
 ```
 
-O comando _branch_ com _-D_ remove a _branch_ especificada independente de mudanças.
+O comando _branch_ com _-D_ remove a _branch_ especificada independentemente de diferenças com a _branch_ _master_.
 
 ```
 git branch -D [branch]
@@ -83,13 +84,7 @@ git branch --no-merged
 
 ### Comando _checkout_
 
-Comando _checkout_ retorna a área _working_ para a versão do _commit_ especificado, criando uma nova _branch_.
-
-```
-git checkout [commit]
-```
-
-O comando _checkout_ muda para a _branch_ especificada.
+Comando _checkout_ muda o repositório para a _branch_ especificada.
 
 ```
 git checkout [branch]
@@ -97,7 +92,7 @@ git checkout [branch]
 
 ### Comando _clone_
 
-Comando _clone_ baixa um clone de um repositório remoto.
+Comando _clone_ baixa um repositório remoto.
 
 ```
 git clone [repositório remoto]
@@ -105,13 +100,13 @@ git clone [repositório remoto]
 
 ### Comando _commit_
 
-Comando _commit_ confirma as mudanças que estão na área _staging_ para o repositório.
+Comando _commit_ confirma as mudanças que estão na área _staging_ para _repository_.
 
 ```
 git commit -m "[mensagem]"
 ```
 
-O comando _commit_ com _-a_ pula a área _staging_ e confirma as mudanças que estão na área _working_ para o repositório.
+O comando _commit_ com _-a_ adiciona todos os arquivos para a área _staging_ e confirma as mudanças para _repository_.
 
 ```
 git commit -a -m "[mensagem]"
@@ -126,20 +121,20 @@ git commit --amend
 
 ### Comando _config_
 
-Comando _config_ pode modificar ou acessar variáveis locais e globais.
+Comando _config_ modifica ou acessa variáveis locais e globais.
 
 Variáveis globais ficam no arquivo _.gitconfig_.
 
-O comando _config_ com _--global_ _user.name_ modifica a variável global que armazena o nome do usuário.
+O comando _config_ com _--global_ _user.name_ modifica a variável global que referencia o nome do usuário.
 
 ```
-git config --global user.name [nome do usuário]
+git config --global user.name "[nome]"
 ```
 
-O comando _config_ com _--global_ _user.email_ modifica a variável global que armazena o e-mail do usuário.
+O comando _config_ com _--global_ _user.email_ modifica a variável global que referencia o e-mail do usuário.
 
 ```
-git config --global user.email [e-mail do usuário]
+git config --global user.email "[e-mail]"
 ```
 
 O comando _config_ com _--list_ exibe uma lista de variáveis configuradas.
@@ -167,7 +162,7 @@ git log --oneline
 
 ### Comando _merge_
 
-Comando _merge_ mescla a _branch_ atual com a especificada.
+Comando _merge_ mescla a _branch_ do repositório com a especificada.
 
 ```
 git merge [branch]
@@ -175,10 +170,10 @@ git merge [branch]
 
 ### Comando _pull_
 
-Comando _pull_ baixa as modificações de uma _branch_ de um repositório remoto no repositório local.
+Comando _pull_ baixa as modificações de uma _branch_ de um repositório remoto.
 
 ```
-git pull [repositório remoto] [branch]
+git pull [nome repositório remoto] [branch]
 ```
 
 ### Comando _push_
@@ -186,7 +181,7 @@ git pull [repositório remoto] [branch]
 Comando _push_ envia as modificações do repositório local para uma _branch_ do repositório remoto.
 
 ```
-git push [repositório remoto] [branch]
+git push [nome repositório remoto] [branch]
 ```
 
 ### Comando _remote_
@@ -194,7 +189,7 @@ git push [repositório remoto] [branch]
 Comando _remote_ com _add_ adiciona um nome para referenciar um repositório remoto.
 
 ```
-git remote add [nome] [URL repositório remoto]
+git remote add [nome repositório remoto] [URL repositório remoto]
 ```
 
 O comando _remote_ com _-v_ exibe uma lista dos repositórios remotos salvos.
@@ -205,14 +200,14 @@ git remote -v
 
 ### Comando _reset_
 
-Comando _reset_ remove todos ou um arquivo específico da área _staging_.
+Comando _reset_ remove todos ou um item específico da área _staging_.
 
 ```
 git reset
-git reset [arquivo]
+git reset [item]
 ```
 
-O comando _reset_ com _--hard_ reseta as áreas _staging_ e _working_ para a versão do _commit_ anterior ou um outro.
+O comando _reset_ com _--hard_ restaura as áreas _staging_ e _working_ para a versão do _commit_ anterior ou um outro.
 
 Esse comando não deve ser utilizado quando os _commits_ estiverem em um repositório remoto.
 
@@ -223,7 +218,9 @@ git reset --hard [commmit]
 
 ### Comando _revert_
 
-Comando _revert_ cria um novo _commit_ com base na reversão de outro.
+Comando _revert_ retorna o estado do repositório para a versão do _commit_ especificado.
+
+Essa reversão criará um novo _commit_.
 
 ```
 git revert [commit]
@@ -231,7 +228,7 @@ git revert [commit]
 
 ### Comando _show_
 
-Comando _show_ exibe informações sobre o último _commit_ ou outro.
+Comando _show_ exibe informações sobre o último _commit_ ou um outro especificado.
 
 ```
 git show
@@ -240,7 +237,7 @@ git show [commit]
 
 ### Comando _status_
 
-Comando _status_ exibe informações sobre o estado do repositório no momento do comando.
+Comando _status_ exibe o estado do repositório no momento do comando.
 
 ```
 git status
