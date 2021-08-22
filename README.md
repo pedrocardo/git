@@ -2,7 +2,7 @@
 
 Esse repositório é elaborado a partir de estudos sobre o sistema de versionamento Git.
 
-Os conteúdos estudados estão organizados em arquivos no formato _markdown_.
+Os conteúdos estudados estão organizados em arquivos _markdown_.
 
 ## Conteúdos
 
