@@ -14,7 +14,7 @@ texto.txt
 diretório/
 ```
 
-# Comentários
+## Comentários
 
 Comentários no arquivo _.gitignore_ devem ser precedidos por _hashtag_.
 
