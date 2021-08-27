@@ -12,6 +12,12 @@ texto.txt
 *.js
 
 diretório/
+```
 
+# Comentários
+
+Comentários no arquivo _.gitignore_ devem ser precedidos por _hashtag_.
+
+```
 # comentário no arquivo .gitignore
 ```
