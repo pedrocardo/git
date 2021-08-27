@@ -6,7 +6,7 @@ Os comandos são sempre precedidos por _git_.
 
 ## _Placeholders_
 
-Em blocos de código, colchetes são utilizados para demarcar _placeholders_.
+Em blocos de código nesse arquivo, colchetes são utilizados para demarcar _placeholders_.
 
 ```
 git comando [placeholder]
@@ -35,7 +35,7 @@ Os comandos descritos nesse arquivo estão listados a seguir.
 
 ### Comando _add_
 
-Comando _add_ adiciona um ou mais itens a área _staging_.
+Comando _add_ adiciona um ou mais arquivos ao estágio _staging_.
 
 ```
 git add [arquivo]
@@ -100,20 +100,20 @@ git clone [repositório remoto]
 
 ### Comando _commit_
 
-Comando _commit_ confirma as mudanças que estão na área _staging_ para _repository_.
+Comando _commit_ confirma os arquivos que estão no estágio _staging_ para o estágio _repository_.
 
 ```
 git commit -m "[mensagem]"
 ```
 
-O comando _commit_ com _-a_ adiciona todos os arquivos para a área _staging_ e confirma as mudanças para _repository_.
+O comando _commit_ com _-a_ confirma todos os arquivos com mudanças direto para o estágio _repository_.
 
 ```
 git commit -a -m "[mensagem]"
 git commit -am "[mensagem]"
 ```
 
-O comando _commit_ com _--amend_ confirma as mudanças que estão na área _staging_ para o último _commit_ do repositório.
+O comando _commit_ com _--amend_ confirma os arquivos que estão no estágio _staging_ para o estágio _repository_ do último _commit_.
 
 ```
 git commit --amend
@@ -121,17 +121,17 @@ git commit --amend
 
 ### Comando _config_
 
-Comando _config_ modifica ou acessa variáveis locais e globais.
+Comando _config_ modifica ou acessa variáveis locais ou globais.
 
 Variáveis globais ficam no arquivo _.gitconfig_.
 
-O comando _config_ com _--global_ _user.name_ modifica a variável global que referencia o nome do usuário.
+O comando _config_ com _--global_ _user.name_ modifica o valor da variável global que referencia o nome do usuário.
 
 ```
 git config --global user.name "[nome]"
 ```
 
-O comando _config_ com _--global_ _user.email_ modifica a variável global que referencia o e-mail do usuário.
+O comando _config_ com _--global_ _user.email_ modifica o valor da variável global que referencia o e-mail do usuário.
 
 ```
 git config --global user.email "[e-mail]"
@@ -153,7 +153,7 @@ git init
 
 ### Comando _log_
 
-Comando _log_ exibe informações sobre os _commits_ realizados.
+Comando _log_ exibe informações sobre os _commits_ do repositório.
 
 ```
 git log
@@ -162,7 +162,7 @@ git log --oneline
 
 ### Comando _merge_
 
-Comando _merge_ mescla a _branch_ do repositório com a especificada.
+Comando _merge_ mescla a _branch_ atual com a especificada.
 
 ```
 git merge [branch]
@@ -170,7 +170,7 @@ git merge [branch]
 
 ### Comando _pull_
 
-Comando _pull_ baixa as modificações de uma _branch_ de um repositório remoto.
+Comando _pull_ baixa as versões de uma _branch_ de um repositório remoto.
 
 ```
 git pull [nome repositório remoto] [branch]
@@ -178,7 +178,7 @@ git pull [nome repositório remoto] [branch]
 
 ### Comando _push_
 
-Comando _push_ envia as modificações do repositório local para uma _branch_ do repositório remoto.
+Comando _push_ envia as versões do repositório local para uma _branch_ de um repositório remoto.
 
 ```
 git push [nome repositório remoto] [branch]
@@ -200,16 +200,14 @@ git remote -v
 
 ### Comando _reset_
 
-Comando _reset_ remove todos ou um item específico da área _staging_.
+Comando _reset_ remove todos ou um arquivo específico do estágio _staging_.
 
 ```
 git reset
 git reset [item]
 ```
 
-O comando _reset_ com _--hard_ restaura as áreas _staging_ e _working_ para a versão do _commit_ anterior ou um outro.
-
-Esse comando não deve ser utilizado quando os _commits_ estiverem em um repositório remoto.
+O comando _reset_ com _--hard_ restaura os estágios _working_ e _staging_ para a versão do _commit_ anterior ou um outro.
 
 ```
 git reset --hard
@@ -218,9 +216,9 @@ git reset --hard [commmit]
 
 ### Comando _revert_
 
-Comando _revert_ retorna o estado do repositório para a versão do _commit_ especificado.
+Comando _revert_ retorna a versão do repositório para a do _commit_ especificado.
 
-Essa reversão criará um novo _commit_.
+Essa reversão criará um novo _commit_ e não apagará os anteriores.
 
 ```
 git revert [commit]

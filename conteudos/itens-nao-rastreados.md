@@ -1,12 +1,10 @@
 # Itens não rastreados
 
-O arquivo _.gitignore_ serve para indicar itens que não serão rastreados pelo repositório.
+O arquivo _.gitignore_ indica itens para não serem rastreados pelo repositório.
 
 Esse arquivo deve ser criado dentro do diretório com a pasta _.git_.
 
-Para que um item não seja rastreado pelo repositório, seu nome deve ser escrito no arquivo _.gitignore_.
-
-Os itens devem ser separados por parágrafo no arquivo _.gitignore_.
+Os itens não rastreados pelo repositório devem ser separados por parágrafo no arquivo _.gitignore_.
 
 ```
 texto.txt
